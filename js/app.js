@@ -1,3 +1,3 @@
 (function(){
-    angular.module('sportApp', ['viewTranlationsModule']);
+    angular.module('sportApp', ['viewBroadcastsModule']);
 })();
