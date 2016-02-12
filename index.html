@@ -1,21 +1,51 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>casda</title>
-    <script src="libs/angular/angular.min.js"></script>
-    <script src="libs/angular/angular-route.min.js"></script>
-    <script src="libs/angular/angular-resource.min.js"></script>
+    <head>
+        <title>SportApp</title>
+        <script src="libs/angular/angular.min.js"></script>
+        <script src="libs/angular/angular-route.min.js"></script>
+        <script src="libs/angular/angular-resource.min.js"></script>
 
-    <script src="js/app.js"></script>
-    <script src="js/viewBroadcasts/viewBroadcastsModule.js"></script>
-    <script src="js/viewBroadcasts/viewBroadcastsController.js"></script>
-    <script src="js/viewBroadcasts/viewBroadcastsService.js"></script>
-</head>
-<body ng-app="sportApp">
-<div ng-controller="viewBroadcastsController">
-    <div ng-repeat="tran in transl">
-        {{tran.name}}
-    </div>
-</div>
-</body>
+        <script src="js/app.js"></script>
+        <script src="js/viewBroadcasts/viewBroadcastsModule.js"></script>
+        <script src="js/viewBroadcasts/viewBroadcastsController.js"></script>
+        <script src="js/viewBroadcasts/viewBroadcastsService.js"></script>
+
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    </head>
+    <body ng-app="sportApp">
+        <div ng-controller="viewBroadcastsController">
+
+            <nav class="navbar navbar-default">
+
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">
+                            <img alt="Brand" src="src/logo.png">
+                        </a>
+                    </div>
+                </div>
+            </nav>
+
+            </br>
+            <ul class="nav nav-pills">
+                <li role="presentation" class="active"><a href="#">Home</a></li>
+                <li role="presentation"><a href="#">Profile</a></li>
+                <li role="presentation"><a href="#">Messages</a></li>
+                <li role="presentation"><a href="#">Sign In</a></li>
+            </ul>
+
+            <table class="table table-condensed">
+                <tr ng-repeat="tran in transl">
+                    <td class="success">{{tran.name}}</td>
+                    <td class="warning">{{tran.date}}</td>
+                    <td class="danger">{{tran.description}}</td>
+                </tr>
+            </table>
+
+        </div>
+    </body>
 </html>
