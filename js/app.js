@@ -1,5 +1,5 @@
 (function() {
     'use strict';
 
-    angular.module('sportApp', ['broadcasts.app', 'profile.app', 'ngRoute']);
+    angular.module('sportApp', ['broadcasts', 'profile', 'ngRoute']);
 })();

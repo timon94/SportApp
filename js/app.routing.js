@@ -8,7 +8,7 @@
         });
 
         $routeProvider.when('/profile', {
-            templateUrl: 'src/view/profiles.view.html',
+            templateUrl: 'src/view/profile.view.html',
             controller: 'profileController',
         });
 

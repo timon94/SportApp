@@ -1,5 +1,5 @@
 (function() {
     'use strict';
 
-    angular.module('broadcasts.app', []);
+    angular.module('broadcasts', []);
 })();

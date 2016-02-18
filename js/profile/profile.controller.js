@@ -1,7 +1,7 @@
 (function() {
     'use strict';
 
-    angular.module('profile.app').controller('profileController', function($scope) {
+    angular.module('profile').controller('profileController', function($scope) {
         var activeCurrentPage = 'profile';
 
         $scope.isActiveProfile = function(page) {
