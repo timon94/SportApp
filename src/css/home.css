@@ -2,3 +2,7 @@
     float: left;
     margin-left: 10px;
 }
+
+body {
+    background: url('images/894399-stadium-wallpaper.jpg') no-repeat center center fixed;
+}

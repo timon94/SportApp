@@ -1,3 +1,5 @@
-(function(){
-    angular.module('sportApp', ['viewBroadcastsModule']);
+(function() {
+    'use strict';
+
+    angular.module('sportApp', ['broadcasts', 'profile', 'ngRoute']);
 })();
