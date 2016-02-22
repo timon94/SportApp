@@ -1,9 +1,10 @@
-<div ng-controller="listController">
-    <ul class="dynamic-grid" angular-grid="pics" ag-grid-width="300" ag-gutter-size="10" ag-angular-grid-id="gallery"
-        ag-refresh-on-img-load="false">
-        <li data-ng-repeat="pic in pics" class="grid" data-ng-clock>
-            <img ng-src="{{pic.media.m}}" class="grid-img" data-actual-width="{{pic.actualWidth}}"
-                 data-actual-height="{{pic.actualHeight}}"/>
-        </li>
-    </ul>
+<div>
+	<ul class="dynamic-grid" angular-grid="pics" ag-grid-width="300" ag-gutter-size="10" ag-angular-grid-id="gallery"
+	    ag-refresh-on-img-load="false">
+		<li data-ng-repeat="pic in broadcastsData" class="grid" data-ng-clock>
+			<img ng-src="{{pic.media.m}}" class="grid-img" data-actual-width="{{pic.actualWidth}}"
+			     data-actual-height="{{pic.actualHeight}}"/>
+			<h1>{{pic.description}}</h1>
+		</li>
+	</ul>
 </div>
