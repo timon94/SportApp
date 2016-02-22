@@ -3,6 +3,38 @@
     margin-left: 10px;
 }
 
-body {
+/*body {
     background: url('images/894399-stadium-wallpaper.jpg') no-repeat center center fixed;
+}*/
+
+.table {
+    opacity: 0.8;
+}
+
+.nopadding {
+    padding: 2px !important;
+    margin: 0 !important;
+    outline: 2px solid #333;
+    background: #333;
+}
+
+.row-fluid {
+    font-size: 15px;
+    ;
+}
+
+.table {
+    opacity: 0.8;
+}
+
+.nopadding {
+    padding: 2px !important;
+    margin: 0 !important;
+    outline: 2px solid #333;
+    background: #333;
+}
+
+.row-fluid {
+    font-size: 15px;
+    ;
 }

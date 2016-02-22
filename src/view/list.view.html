@@ -1,0 +1,19 @@
+<div>
+    <ul class="dynamic-grid" angular-grid="pics" ag-grid-width="300" ag-gutter-size="10" ag-angular-grid-id="gallery"
+        ag-refresh-on-img-load="false">
+        <li data-ng-repeat="pic in broadcastsData" class="grid" data-ng-clock>
+            <div class="thumbnail">
+                <img src="http://placehold.it/300x240" alt="">
+                <div class="caption">
+                    <h3><a href="#">{{pic.title}}</a> </h3>
+                    <p>{{pic.description}}</p>
+                    <p>
+                        {{pic.date}}
+                    </p>
+                    <br>
+                    <a href="{{pic.link}}" class="btn btn-primary">More</a>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
