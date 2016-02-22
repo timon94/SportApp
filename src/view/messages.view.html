@@ -1,0 +1,9 @@
+<div ng-controller="broadcastsController">
+    <table class="table table-condensed">
+        <tr ng-repeat="tran in broadcastsData">
+            <td class="success">{{tran.title}}</td>
+            <td class="warning">{{tran.date}}</td>
+            <td class="danger">{{tran.description}}</td>
+        </tr>
+    </table>
+</div>
