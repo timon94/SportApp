@@ -1,5 +1,12 @@
 (function() {
     'use strict';
 
-    angular.module('sportApp', ['broadcasts', 'profile', 'ngRoute']);
+    angular.module('sportApp', [
+        'ngRoute',
+        'angularGrid',
+
+        'broadcasts',
+        'profile',
+        'list'
+    ]);
 })();
