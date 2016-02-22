@@ -1,9 +1,9 @@
 (function () {
     'use strict';
 
-    angular.module('list').controller('listController', function ($scope, List) {
-        List.getData().then(function(value) {
-            $scope.broadcastsData = value;
+    angular.module('list').controller('listController', function ($scope, Broadcasts) {
+        Broadcasts.getData().then(function(response) {
+            $scope.broadcastsData = response.data;
         });
     });
 })();
