@@ -1,0 +1,16 @@
+<div ng-include="'src/view/app.slider.html'"></div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-9 col-md-9 " ng-controller="newsController" as News>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 news-hor-line">
+                    <div class="container-fluid news-ver-line" ng-repeat="new in sportNews" ng-if="$even" ng-include="'src/view/news.block.view.html'"></div>
+                </div>
+                <div class="col-lg-6 col-md-6 news-hor-line">
+                    <div class="container-fluid news-ver-line" ng-repeat="new in sportNews" ng-if="$odd" ng-include="'src/view/news.block.view.html'"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
