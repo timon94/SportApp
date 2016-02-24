@@ -10,12 +10,12 @@
     text-align: justify;
 }
 
-.link-style a{
+.link-style a {
     color: #181818;
     text-decoration: none;
 }
 
-.link-style a:hover{
+.link-style a:hover {
     color: #01576e;
     text-decoration: none;
 }
@@ -28,7 +28,7 @@
     border-bottom: 1px solid rgb(213, 213, 213);
 }
 
-@media (max-width: 992px){
+@media (max-width: 992px) {
     .news-hor-line {
         border-right: none;
     }
