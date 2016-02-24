@@ -7,6 +7,7 @@
 
         'broadcasts',
         'profile',
-        'list'
+        'list',
+        'sportNews'
     ]);
 })();

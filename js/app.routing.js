@@ -8,7 +8,7 @@
         });
 
         $routeProvider.when('/profile', {
-            templateUrl: 'src/view/messages.view.html',
+            templateUrl: 'src/view/profile.view.html',
             controller: 'broadcastsController',
         });
 
@@ -19,6 +19,11 @@
 
         $routeProvider.when('/list', {
            templateUrl: 'src/view/list.view.html',
+            controller: 'listController',
+        });
+
+        $routeProvider.when('/listId.view.html', {
+            templateUrl: 'src/view/listId.view.html',
             controller: 'listController',
         });
 
