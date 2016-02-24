@@ -22,9 +22,9 @@
             controller: 'listController',
         });
 
-        $routeProvider.when('/listId.view.html', {
+        $routeProvider.when('/list/:listId', {
             templateUrl: 'src/view/listId.view.html',
-            controller: 'listController',
+            controller: 'broadcastController',
         });
 
         $routeProvider.otherwise({redirectTo: '/home'});
