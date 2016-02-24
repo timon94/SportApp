@@ -1,4 +1,4 @@
-(function() {
+(function () {
     'use strict';
 
     angular.module('sportApp', [
@@ -7,6 +7,7 @@
 
         'broadcasts',
         'profile',
-        'list'
+        'list',
+        'sportNews'
     ]);
 })();
