@@ -13,29 +13,29 @@
 
         <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
 
-        <script src="src/module/module.app/app.module/app.js"></script>
-        <script src="src/module/module.app/app.routing/app.routing.js"></script>
-        <script src="src/module/module.app/app.controllers/app.controller.js"></script>
-        <script src="src/module/module.app/app.service/app.service.navbar.js"></script>
-        <script src="src/module/module.broadcasts/broadcasts.module/broadcasts.module.js"></script>
-        <script src="src/module/module.broadcasts/broadcasts.service/broadcasts.service.js"></script>
-        <script src="src/module/module.broadcasts/broadcasts.controllers/broadcasts.controller.js"></script>
-        <script src="src/module/module.news/news.module/news.module.js"></script>
-        <script src="src/module/module.news/news.controllers/news.controller.js"></script>
-        <script src="src/module/module.news/news.service/news.service.js"></script>
-        <script src="src/module/module.profile/profile.module/profile.module.js"></script>
-        <script src="src/module/module.profile/profile.controller/profile.controller.js"></script>
+        <script src="src/app/module/app.js"></script>
+        <script src="src/app/routing/app.routing.js"></script>
+        <script src="src/app/controllers/app.controller.js"></script>
+        <script src="src/app/service/app.service.navbar.js"></script>
+        <script src="src/broadcasts/broadcasts.module/broadcasts.module.js"></script>
+        <script src="src/broadcasts/broadcasts.service/broadcasts.service.js"></script>
+        <script src="src/broadcasts/broadcasts.controllers/broadcasts.controller.js"></script>
+        <script src="src/news/news.module/news.module.js"></script>
+        <script src="src/news/news.controllers/news.controller.js"></script>
+        <script src="src/news/news.service/news.service.js"></script>
+        <script src="src/profile/profile.module/profile.module.js"></script>
+        <script src="src/profile/profile.controller/profile.controller.js"></script>
 
-        <link rel="stylesheet" href="src/module/module.app/app.style/home.css">
-        <link rel="stylesheet" href="src/module/module.app/app.style/style.app.navbar.css">
-        <link rel="stylesheet" href="src/module/module.broadcasts/broadcasts.style/list.css">
-        <link rel="stylesheet" href="src/module/module.news/news.style/style.news.css">
+        <link rel="stylesheet" href="src/app/style/home.css">
+        <link rel="stylesheet" href="src/app/style/style.app.navbar.css">
+        <link rel="stylesheet" href="src/broadcasts/broadcasts.style/list.css">
+        <link rel="stylesheet" href="src/news/news.style/style.news.css">
 
     </head>
 
     <body ng-app="sportApp">
 
-        <div ng-include="'src/module/module.app/app.view/app.navbar.html'"></div>
+        <div ng-include="'src/app/view/app.navbar.html'"></div>
 
         <div ng-view></div>
 
