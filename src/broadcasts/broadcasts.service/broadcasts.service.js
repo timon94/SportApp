@@ -3,7 +3,7 @@
 
     angular.module('broadcasts').service('Broadcasts', function ($http) {
         this.getData = function () {
-            return $http.get('api/data.json');
+            return $http.get('../api/data.json');
         };
     });
 })();
