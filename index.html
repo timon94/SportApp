@@ -10,34 +10,31 @@
         <script src="libs/angulargrid/angulargrid.min.js"></script>
         <script src="libs/jquery/jquery-2.2.0.min.js"></script>
         <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
 
         <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
 
-        <script src="src/js/app.js"></script>
-        <script src="src/js/app.routing.js"></script>
-        <script src="src/js/app.controller.js"></script>
-        <script src="src/js/app.service.navbar.js"></script>
-        <script src="src/js/broadcasts/broadcasts.module.js"></script>
-        <script src="src/js/broadcasts/broadcasts.service.js"></script>
-        <script src="src/js/broadcasts/broadcasts.controller.js"></script>
-        <script src="src/js/profile/profile.module.js"></script>
-        <script src="src/js/profile/profile.controller.js"></script>
-        <script src="src/js/list/list.module.js"></script>
-        <script src="src/js/list/list.controller.js"></script>
-        <script src="src/js/news/news.module.js"></script>
-        <script src="src/js/news/news.controller.js"></script>
-        <script src="src/js/news/news.service.js"></script>
+        <script src="src/module/module.app/app.module/app.js"></script>
+        <script src="src/module/module.app/app.routing/app.routing.js"></script>
+        <script src="src/module/module.app/app.controllers/app.controller.js"></script>
+        <script src="src/module/module.app/app.service/app.service.navbar.js"></script>
+        <script src="src/module/module.broadcasts/broadcasts.module/broadcasts.module.js"></script>
+        <script src="src/module/module.broadcasts/broadcasts.service/broadcasts.service.js"></script>
+        <script src="src/module/module.broadcasts/broadcasts.controllers/broadcasts.controller.js"></script>
+        <script src="src/module/module.news/news.module/news.module.js"></script>
+        <script src="src/module/module.news/news.controllers/news.controller.js"></script>
+        <script src="src/module/module.news/news.service/news.service.js"></script>
 
-        <link rel="stylesheet" href="src/css/home.css">
-        <link rel="stylesheet" href="src/css/style.app.navbar.css">
-        <link rel="stylesheet" href="src/css/list.css">
-        <link rel="stylesheet" href="src/css/style.news.css">
+        <link rel="stylesheet" href="src/module/module.app/app.style/home.css">
+        <link rel="stylesheet" href="src/module/module.app/app.style/style.app.navbar.css">
+        <link rel="stylesheet" href="src/module/module.broadcasts/broadcasts.style/list.css">
+        <link rel="stylesheet" href="src/module/module.news/news.style/style.news.css">
 
     </head>
 
     <body ng-app="sportApp">
 
-        <div ng-include="'src/view/app.navbar.html'"></div>
+        <div ng-include="'src/module/module.app/app.view/app.navbar.html'"></div>
 
         <div ng-view></div>
 
