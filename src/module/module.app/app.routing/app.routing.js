@@ -19,7 +19,7 @@
 
         $routeProvider.when('/list', {
            templateUrl: 'src/module/module.broadcasts/broadcasts.view/list.view.html',
-            controller: 'listController',
+            controller: 'broadcastsController',
         });
 
         $routeProvider.when('/list/:listId', {
